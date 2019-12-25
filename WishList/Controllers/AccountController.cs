@@ -75,7 +75,7 @@ namespace WishList.Controllers
         }
 
         [HttpPost]
-        [AutoValidateAntiforgeryToken]
+        [ValidateAntiForgeryToken]
         public IActionResult Logout()
         {
             _signInManager.SignOutAsync();
